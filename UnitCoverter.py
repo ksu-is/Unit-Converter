@@ -1,0 +1,23 @@
+def convert_length():
+    print("\nLength Conversion Options:")
+    print("1. Meters to Kilometers")
+    print("2. Kilometers to Miles")
+    print("3. Inches to Centimeters")
+    print("4. Feet to Meters")
+    print("5. Miles to Meters")
+    
+    choice = input("Choose an option (1-5): ")
+    value = float(input("Enter value to convert: "))
+
+    if choice == '1':
+        print(f"{value} meters = {value / 1000} kilometers")
+    elif choice == '2':
+        print(f"{value} kilometers = {value * 0.621371} miles")
+    elif choice == '3':
+        print(f"{value} inches = {value * 2.54} centimeters")
+    elif choice == '4':
+        print(f"{value} feet = {value * 0.3048} meters")
+    elif choice == '5':
+        print(f"{value} miles = {value * 1609.34} meters")
+    else:
+        print("Invalid choice.")
