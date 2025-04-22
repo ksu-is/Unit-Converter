@@ -63,3 +63,24 @@ def convert_temperature():
         print(f"{value} K = {value - 273.15}°C")
     else:
         print("Invalid choice.")
+
+def convert_weight():
+    print("\nWeight Conversion Options:")
+    print("1. Grams to Kilograms")
+    print("2. Kilograms to Pounds")
+    print("3. Pounds to Kilograms")
+    print("4. Ounces to Grams")
+
+    choice = input("Choose an option (1-4): ")
+    value = float(input("Enter value to convert: "))
+
+    if choice == '1':
+        print(f"{value} grams = {value / 1000} kilograms")
+    elif choice == '2':
+        print(f"{value} kilograms = {value * 2.20462} pounds")
+    elif choice == '3':
+        print(f"{value} pounds = {value / 2.20462} kilograms")
+    elif choice == '4':
+        print(f"{value} ounces = {value * 28.3495} grams")
+    else:
+        print("Invalid choice.")
