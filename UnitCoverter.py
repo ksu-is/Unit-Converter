@@ -84,3 +84,28 @@ def convert_weight():
         print(f"{value} ounces = {value * 28.3495} grams")
     else:
         print("Invalid choice.")
+
+def main():
+    while True:
+        print("\nWelcome to the Unit Converter!")
+        print("1. Convert Length")
+        print("2. Convert Temperature")
+        print("3. Convert Weight")
+        print("4. Exit")
+
+        option = input("Select conversion type (1-4): ")
+
+        if option == '1':
+            convert_length()
+        elif option == '2':
+            convert_temperature()
+        elif option == '3':
+            convert_weight()
+        elif option == '4':
+            print("Thank you for using the Unit Converter. Goodbye!")
+            break
+        else:
+            print("Invalid selection. Please choose a number between 1 and 4.")
+
+if __name__ == "__main__":
+    main()
